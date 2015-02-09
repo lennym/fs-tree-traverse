@@ -1,0 +1,24 @@
+{
+  "name": "fs-tree-traverse",
+  "version": "0.0.0",
+  "description": "Traverse the contents of a directory and return a list of all files contained within",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lennym/fs-tree-traverse.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lennym/fs-tree-traverse/issues"
+  },
+  "homepage": "https://github.com/lennym/fs-tree-traverse",
+  "dependencies": {
+    "graceful-fs": "^3.0.5",
+    "q": "^1.1.2",
+    "underscore": "^1.7.0"
+  }
+}
