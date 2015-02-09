@@ -11,7 +11,7 @@ npm install fs-tree-traverse
 
 Basic usage:
 
-```
+```javascript
 var traverse = require('fs-tree-traverse');
 traverse(__dirname, function (err, files) {
     console.log(files);
@@ -50,7 +50,7 @@ traverse(__dirname, function (err, files) {
 
 Include hidden files/folders:
 
-```
+```javascript
 var traverse = require('fs-tree-traverse');
 traverse(__dirname, { hidden: true }, function (err, files) {
     console.log(files);
@@ -59,7 +59,7 @@ traverse(__dirname, { hidden: true }, function (err, files) {
 
 Output paths relative to directory:
 
-```
+```javascript
 var traverse = require('fs-tree-traverse');
 traverse(__dirname, { relative: true }, function (err, files) {
     console.log(files);
