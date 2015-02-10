@@ -48,6 +48,8 @@ traverse.list(__dirname, function (err, files) {
 */
 ```
 
+## Options
+
 Include hidden files/folders:
 
 ```javascript
@@ -66,8 +68,26 @@ traverse.list(__dirname, { relative: true }, function (err, files) {
 });
 /*
 =>
-[ './fs-tree-traverse/LICENSE',
-  './fs-tree-traverse/README.md',
-  './fs-tree-traverse/index.js',
+[ 'LICENSE',
+  'README.md',
+  'index.js',
   ... ]
+```
+
+## Synchronous alternative
+
+A synchronous alternative to `list` also exists - `listSync` which uses `*Sync` fs methods.
+
+```javascript
+var traverse = require('fs-tree-traverse');
+var files = traverse.listSync(__dirname);
+console.log(files);
+
+/* Outputs (at time of writing):
+
+[ '/home/lmartin/dev/fs-tree-traverse/LICENSE',
+  '/home/lmartin/dev/fs-tree-traverse/README.md',
+  '/home/lmartin/dev/fs-tree-traverse/index.js',
+  ... ]
+*/
 ```
