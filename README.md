@@ -13,7 +13,7 @@ Basic usage:
 
 ```javascript
 var traverse = require('fs-tree-traverse');
-traverse(__dirname, function (err, files) {
+traverse.list(__dirname, function (err, files) {
     console.log(files);
 });
 
@@ -52,7 +52,7 @@ Include hidden files/folders:
 
 ```javascript
 var traverse = require('fs-tree-traverse');
-traverse(__dirname, { hidden: true }, function (err, files) {
+traverse.list(__dirname, { hidden: true }, function (err, files) {
     console.log(files);
 });
 ```
@@ -61,7 +61,7 @@ Output paths relative to directory:
 
 ```javascript
 var traverse = require('fs-tree-traverse');
-traverse(__dirname, { relative: true }, function (err, files) {
+traverse.list(__dirname, { relative: true }, function (err, files) {
     console.log(files);
 });
 /*
