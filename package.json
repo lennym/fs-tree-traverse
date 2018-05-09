@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/lennym/fs-tree-traverse",
   "dependencies": {
-    "graceful-fs": "^3.0.5",
+    "graceful-fs": "^4.1.11",
     "q": "^1.1.2",
     "underscore": "^1.7.0"
   }
